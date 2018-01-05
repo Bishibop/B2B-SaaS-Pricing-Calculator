@@ -1,0 +1,258 @@
+\---
+permalink: /b2b-saas-pricing-calculator
+redirect_from:
+\  - /b2b-saas-pricing-explorer/
+\  - /b2b-saas-pricing-explorer
+\---
+
+!!!
+%html{ lang: :en }
+  %head
+    %meta{ charset: "utf-8" }
+    %meta{ "http-equiv" => "X-UA-Compatible", content: "IE=edge" }
+    %meta{ name: :viewport, content: "width=device-width, intitial-scale=1" }
+    %title B2B SaaS Pricing Calculator
+
+
+    %link{ rel: :stylesheet, href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity: "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin: :anonymous }
+    %link{ rel: :stylesheet, href: "pricing_explorer.css" }
+
+  %body
+    .container
+      %h1.main-header.center-block.text-center
+        You could increase your New MRR 30% tomorrow just by changing your pricing.
+      .copy.center-block
+        %p You've heard Patrick McKenzie's famous refrain "Charge more." You might have even heard Marc Andreessen talk about putting up a billboard in the heart of San Francisco with just the words "Raise Prices."
+        %p The advice is well deserved. Pricing is a huge revenue lever, and over and over, B2B SaaS companies completely change their businesses by improving it.
+        %p
+          Intercom, the in-app messaging service, increased their revenue-per-user over 30 percent when they first started testing different pricing structures.
+        %blockquote
+          %a(href="https://www.heavybit.com/library/video/growth-hacking-is-bs/") "OK, first time we changed prices, unimaginably impactful on our business."
+        %p
+          Chargify, the subscription billing company,
+          %strong saved their business
+          by raising their prices.
+          (They also caused a PR disaster when they did it. Oh well. Six years later, they're still on top.)
+        %blockquote
+          %a(href="https://www.chargify.com/blog/why-we-changed-our-pricing/") "The reality is that our old pricing was going to bankrupt us."
+        %p
+          Ruben Gamez, the founder of Bidsketch, saw a greater immediate increase in his revenue from changing his pricing than he did from from getting mentioned in an email FreshBooks sent to a million people.
+        %blockquote
+          %a(href="http://www.extendslogic.com/business/what-i-learned-from-increasing-my-prices/") "Results after the first couple of months...average revenue per customer more than doubled."
+        %strong
+          %p Imagine if you joined these people and saw similar results. You'd be able to:
+          %ul
+            %li grow faster
+            %li make more money
+            %li spend more on customer aquisition
+            %li offer better customer support
+        %p Sounds nice, doesn't it?
+        %h3
+          %strong But what would changing your pricing actually look like?
+        %ul
+          %li Would you have to raise prices across the board or only on a single plan?
+          %li Introduce new plans or get rid of existing ones?
+          %li Could you do it without changing your prices at all?
+        %p These are the questions I'd like to help you answer.
+        %h3
+          %strong The tool below will help you understand how different changes to your plans and pricing would affect your New MRR.
+        %p Enter your current plans and a set of potential new plans, and it will show you the revenue difference between the two. You can use this to explore the consequences of various potential changes to your pricing.
+        %p Try and find a new pricing structure that would increase your revenue acquisition by 30%. It might be easier than you think...
+        %p Don't wait too long though. You don't want to end up like this guy:
+        %blockquote
+          %a(href="http://longlivetheinternet.com/double-your-saas-prices/") "I felt silly. I felt like we had been leaving money on the table for years. If people had been willing to pay more for the same product for all these years we missed an opportunity. We should have doubled our SaaS prices long ago."
+        %p Where to start:
+        %ul
+          %li
+            %u Try adding that $500 a month plan you've been thinking about.
+            %br The biggest customers are often happy to pay far more than you think.
+          %li
+            %u Increase the price of your largest (or smallest) plan by 50%.
+            %br People who need your product know that it's worth it.
+          %li
+            %u Shift 10% of your new customers from your lowest plan to your highest plan.
+            %br Sometimes just changing how you segment your plans is enough.
+          %li
+            %u Drop your cheapest plan (and the support burden that goes with it).
+            %br I'm guessing that you could maintain enough signups for this to be more than worth it.
+      .application
+
+        %h3.original-plans-header
+          %strong
+            %u Enter your current plans:
+
+        .row.plans.original-plans
+
+          .col-xs-2.signups
+            .form-group.text-center
+              %input.center-block.text-center.form-control{ type: :number, step: 1, placeholder: 500 }
+              %label # of monthly signups
+            .mix-percentage-callout.center-block.text-center
+              %span Must add up to 100%
+              %span.glyphicon.glyphicon-arrow-right
+
+          .col-xs-2.plan-column
+            .plan.center-block
+              .close-button.glyphicon.glyphicon-remove-circle
+              %h4.plan-name.text-center Small
+              .price.text-center
+                %form.form-inline
+                  .form-group
+                    %label $
+                    %input.text-center.form-control{ type: :number, min: 0, placeholder: 35 }
+                %p.small / month
+                %ul.list-unstyled.small
+                  %li Some Widgets
+                  %li Feature
+                  %li Feature
+                  %li Feature
+            .mix-percentage.text-center
+              %form.form-inline
+                .form-group
+                  %input.text-center.form-control{ type: :number, min: 0, max: 100, placeholder: 75 }
+                  %label %
+              %label of signups
+
+          .col-xs-2.plan-column
+            .plan.center-block
+              .close-button.glyphicon.glyphicon-remove-circle
+              %h4.plan-name.text-center Medium
+              .price.text-center
+                %form.form-inline
+                  .form-group
+                    %label $
+                    %input.text-center.form-control{ type: :number, min: 0, placeholder: 100 }
+                %p.small / month
+                %ul.list-unstyled.small
+                  %li Some Widgets
+                  %li Feature
+                  %li Feature
+                  %li Feature
+            .mix-percentage.text-center
+              %form.form-inline
+                .form-group
+                  %input.text-center.form-control{ type: :number, min: 0, max: 100, placeholder: 25 }
+                  %label %
+              %label of signups
+
+          .col-xs-2.add-plan-column
+            %button.add-plan.btn.btn-primary.center-block{ type: :button }
+              .glyphicon.glyphicon-plus
+              %div Add Plan
+
+        .new-plans-header
+          %h3
+            %strong
+              %U Enter an alternative set of plans:
+
+          %button.copy-plans.btn.btn-primary{ type: :button }
+            %span.glyphicon.glyphicon-arrow-down.left
+            Copy Your Current Plans
+            %span.glyphicon.glyphicon-arrow-down.right
+
+        .row.plans.new-plans
+
+          .col-xs-2.signups
+            .form-group.text-center
+              %input.center-block.text-center.form-control{ type: :number, step: 1, placeholder: 500 }
+              %label # of monthly signups
+            .mix-percentage-callout.center-block.text-center
+              %span Must add up to 100%
+              %span.glyphicon.glyphicon-arrow-right
+
+          .col-xs-2.plan-column
+            .plan.center-block
+              .close-button.glyphicon.glyphicon-remove-circle
+              %h4.plan-name.text-center Small
+              .price.text-center
+                %form.form-inline
+                  .form-group
+                    %label $
+                    %input.text-center.form-control{ type: :number, min: 0, placeholder: 35 }
+                %p.small / month
+                %ul.list-unstyled.small
+                  %li Some Widgets
+                  %li Feature
+                  %li Feature
+                  %li Feature
+            .mix-percentage.text-center
+              %form.form-inline
+                .form-group
+                  %input.text-center.form-control{ type: :number, min: 0, max: 100, placeholder: 70 }
+                  %label %
+              %label of signups
+
+          .col-xs-2.plan-column
+            .plan.center-block
+              .close-button.glyphicon.glyphicon-remove-circle
+              %h4.plan-name.text-center Medium
+              .price.text-center
+                %form.form-inline
+                  .form-group
+                    %label $
+                    %input.text-center.form-control{ type: :number, min: 0, placeholder: 100 }
+                %p.small / month
+                %ul.list-unstyled.small
+                  %li Some Widgets
+                  %li Feature
+                  %li Feature
+                  %li Feature
+            .mix-percentage.text-center
+              %form.form-inline
+                .form-group
+                  %input.text-center.form-control{ type: :number, min: 0, max: 100, placeholder: 20 }
+                  %label %
+              %label of signups
+
+          .col-xs-2.plan-column
+            .plan.center-block
+              .close-button.glyphicon.glyphicon-remove-circle
+              %h4.plan-name.text-center Large
+              .price.text-center
+                %form.form-inline
+                  .form-group
+                    %label $
+                    %input.text-center.form-control{ type: :number, min: 0, placeholder: 350 }
+                %p.small / month
+                %ul.list-unstyled.small
+                  %li Some Widgets
+                  %li Feature
+                  %li Feature
+                  %li Feature
+            .mix-percentage.text-center
+              %form.form-inline
+                .form-group
+                  %input.text-center.form-control{ type: :number, min: 0, max: 100, placeholder: 10 }
+                  %label %
+              %label of signups
+
+          .col-xs-2.add-plan-column
+            %button.add-plan.btn.btn-primary.center-block{ type: :button }
+              .glyphicon.glyphicon-plus
+              %div Add Plan
+
+        .revenue-multiplier
+          %button.calculate-multiplier.btn-lg.btn-success{ type: :button }
+            Calculate Potential Revenue Increase
+          %span.glyphicon.glyphicon-arrow-right
+          .multiplier-display
+            %h2
+              %strong ???
+      .footer
+        %br
+        %br
+        %br
+        %br
+
+    %script{ src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" }
+    -#%script{ src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity: "sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin: :anonymous }
+    %script{ src: "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" }
+    %script{ src: "pricing_explorer.js" }
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-83789604-1', 'auto');
+      ga('send', 'pageview');
