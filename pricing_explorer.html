@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>{ lang: :en }
+  <head>
+    <meta />{ charset: "utf-8" }<meta />{ "http-equiv" => "X-UA-Compatible", content: "IE=edge" }<meta />{ name: :viewport, content: "width=device-width, intitial-scale=1" }<title>B2B SaaS Pricing Calculator</title>
+    <link />{ rel: :stylesheet, href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity: "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin: :anonymous }<link />{ rel: :stylesheet, href: "pricing_explorer.css" }</head>
+  <body>
+    <div class="container">
+      <h1 class="main-header center-block text-center">
+        You could increase your New MRR 30% tomorrow just by changing your pricing.
+      </h1>
+      <div class="copy center-block">
+        <p>You've heard Patrick McKenzie's famous refrain "Charge more." You might have even heard Marc Andreessen talk about putting up a billboard in the heart of San Francisco with just the words "Raise Prices."</p>
+        <p>The advice is well deserved. Pricing is a huge revenue lever, and over and over, B2B SaaS companies completely change their businesses by improving it.</p>
+        <p>
+          Intercom, the in-app messaging service, increased their revenue-per-user over 30 percent when they first started testing different pricing structures.
+        </p>
+        <blockquote>
+          <a href="https://www.heavybit.com/library/video/growth-hacking-is-bs/">"OK, first time we changed prices, unimaginably impactful on our business."</a>
+        </blockquote>
+        <p>
+          Chargify, the subscription billing company,
+          <strong>saved their business</strong>
+          by raising their prices.
+          (They also caused a PR disaster when they did it. Oh well. Six years later, they're still on top.)
+        </p>
+        <blockquote>
+          <a href="https://www.chargify.com/blog/why-we-changed-our-pricing/">"The reality is that our old pricing was going to bankrupt us."</a>
+        </blockquote>
+        <p>
+          Ruben Gamez, the founder of Bidsketch, saw a greater immediate increase in his revenue from changing his pricing than he did from from getting mentioned in an email FreshBooks sent to a million people.
+        </p>
+        <blockquote>
+          <a href="http://www.extendslogic.com/business/what-i-learned-from-increasing-my-prices/">"Results after the first couple of months...average revenue per customer more than doubled."</a>
+        </blockquote>
+        <strong>
+          <p>Imagine if you joined these people and saw similar results. You'd be able to:</p>
+          <ul>
+            <li>grow faster</li>
+            <li>make more money</li>
+            <li>spend more on customer aquisition</li>
+            <li>offer better customer support</li>
+          </ul>
+        </strong>
+        <p>Sounds nice, doesn't it?</p>
+        <h3>
+          <strong>But what would changing your pricing actually look like?</strong>
+        </h3>
+        <ul>
+          <li>Would you have to raise prices across the board or only on a single plan?</li>
+          <li>Introduce new plans or get rid of existing ones?</li>
+          <li>Could you do it without changing your prices at all?</li>
+        </ul>
+        <p>These are the questions I'd like to help you answer.</p>
+        <h3>
+          <strong>The tool below will help you understand how different changes to your plans and pricing would affect your New MRR.</strong>
+        </h3>
+        <p>Enter your current plans and a set of potential new plans, and it will show you the revenue difference between the two. You can use this to explore the consequences of various potential changes to your pricing.</p>
+        <p>Try and find a new pricing structure that would increase your revenue acquisition by 30%. It might be easier than you think...</p>
+        <p>Don't wait too long though. You don't want to end up like this guy:</p>
+        <blockquote>
+          <a href="http://longlivetheinternet.com/double-your-saas-prices/">"I felt silly. I felt like we had been leaving money on the table for years. If people had been willing to pay more for the same product for all these years we missed an opportunity. We should have doubled our SaaS prices long ago."</a>
+        </blockquote>
+        <p>Where to start:</p>
+        <ul>
+          <li>
+            <u>Try adding that $500 a month plan you've been thinking about.</u>
+            <br />The biggest customers are often happy to pay far more than you think.</li>
+          <li>
+            <u>Increase the price of your largest (or smallest) plan by 50%.</u>
+            <br />People who need your product know that it's worth it.</li>
+          <li>
+            <u>Shift 10% of your new customers from your lowest plan to your highest plan.</u>
+            <br />Sometimes just changing how you segment your plans is enough.</li>
+          <li>
+            <u>Drop your cheapest plan (and the support burden that goes with it).</u>
+            <br />I'm guessing that you could maintain enough signups for this to be more than worth it.</li>
+        </ul>
+      </div>
+      <div class="application">
+        <h3 class="original-plans-header">
+          <strong>
+            <u>Enter your current plans:</u>
+          </strong>
+        </h3>
+        <div class="row plans original-plans">
+          <div class="col-xs-2 signups">
+            <div class="form-group text-center">
+              <input class="center-block text-center form-control" />{ type: :number, step: 1, placeholder: 500 }<label># of monthly signups</label>
+            </div>
+            <div class="mix-percentage-callout center-block text-center">
+              <span>Must add up to 100%</span>
+              <span class="glyphicon glyphicon-arrow-right"></span>
+            </div>
+          </div>
+          <div class="col-xs-2 plan-column">
+            <div class="plan center-block">
+              <div class="close-button glyphicon glyphicon-remove-circle"></div>
+              <h4 class="plan-name text-center">Small</h4>
+              <div class="price text-center">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label>$</label>
+                    <input class="text-center form-control" />{ type: :number, min: 0, placeholder: 35 }</div>
+                </form>
+                <p class="small"><!-- month --></p>
+                <ul class="list-unstyled small">
+                  <li>Some Widgets</li>
+                  <li>Feature</li>
+                  <li>Feature</li>
+                  <li>Feature</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mix-percentage text-center">
+              <form class="form-inline">
+                <div class="form-group">
+                  <input class="text-center form-control" />{ type: :number, min: 0, max: 100, placeholder: 75 }<label><div></div></label>
+                </div>
+              </form>
+              <label>of signups</label>
+            </div>
+          </div>
+          <div class="col-xs-2 plan-column">
+            <div class="plan center-block">
+              <div class="close-button glyphicon glyphicon-remove-circle"></div>
+              <h4 class="plan-name text-center">Medium</h4>
+              <div class="price text-center">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label>$</label>
+                    <input class="text-center form-control" />{ type: :number, min: 0, placeholder: 100 }</div>
+                </form>
+                <p class="small"><!-- month --></p>
+                <ul class="list-unstyled small">
+                  <li>Some Widgets</li>
+                  <li>Feature</li>
+                  <li>Feature</li>
+                  <li>Feature</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mix-percentage text-center">
+              <form class="form-inline">
+                <div class="form-group">
+                  <input class="text-center form-control" />{ type: :number, min: 0, max: 100, placeholder: 25 }<label><div></div></label>
+                </div>
+              </form>
+              <label>of signups</label>
+            </div>
+          </div>
+          <div class="col-xs-2 add-plan-column">
+            <button class="add-plan btn btn-primary center-block">{ type: :button }
+              <div class="glyphicon glyphicon-plus"></div>
+              <div>Add Plan</div></button>
+          </div>
+        </div>
+        <div class="new-plans-header">
+          <h3>
+            <strong>
+              <u>Enter an alternative set of plans:</u>
+            </strong>
+          </h3>
+          <button class="copy-plans btn btn-primary">{ type: :button }
+            <span class="glyphicon glyphicon-arrow-down left"></span>
+            Copy Your Current Plans
+            <span class="glyphicon glyphicon-arrow-down right"></span></button>
+        </div>
+        <div class="row plans new-plans">
+          <div class="col-xs-2 signups">
+            <div class="form-group text-center">
+              <input class="center-block text-center form-control" />{ type: :number, step: 1, placeholder: 500 }<label># of monthly signups</label>
+            </div>
+            <div class="mix-percentage-callout center-block text-center">
+              <span>Must add up to 100%</span>
+              <span class="glyphicon glyphicon-arrow-right"></span>
+            </div>
+          </div>
+          <div class="col-xs-2 plan-column">
+            <div class="plan center-block">
+              <div class="close-button glyphicon glyphicon-remove-circle"></div>
+              <h4 class="plan-name text-center">Small</h4>
+              <div class="price text-center">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label>$</label>
+                    <input class="text-center form-control" />{ type: :number, min: 0, placeholder: 35 }</div>
+                </form>
+                <p class="small"><!-- month --></p>
+                <ul class="list-unstyled small">
+                  <li>Some Widgets</li>
+                  <li>Feature</li>
+                  <li>Feature</li>
+                  <li>Feature</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mix-percentage text-center">
+              <form class="form-inline">
+                <div class="form-group">
+                  <input class="text-center form-control" />{ type: :number, min: 0, max: 100, placeholder: 70 }<label><div></div></label>
+                </div>
+              </form>
+              <label>of signups</label>
+            </div>
+          </div>
+          <div class="col-xs-2 plan-column">
+            <div class="plan center-block">
+              <div class="close-button glyphicon glyphicon-remove-circle"></div>
+              <h4 class="plan-name text-center">Medium</h4>
+              <div class="price text-center">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label>$</label>
+                    <input class="text-center form-control" />{ type: :number, min: 0, placeholder: 100 }</div>
+                </form>
+                <p class="small"><!-- month --></p>
+                <ul class="list-unstyled small">
+                  <li>Some Widgets</li>
+                  <li>Feature</li>
+                  <li>Feature</li>
+                  <li>Feature</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mix-percentage text-center">
+              <form class="form-inline">
+                <div class="form-group">
+                  <input class="text-center form-control" />{ type: :number, min: 0, max: 100, placeholder: 20 }<label><div></div></label>
+                </div>
+              </form>
+              <label>of signups</label>
+            </div>
+          </div>
+          <div class="col-xs-2 plan-column">
+            <div class="plan center-block">
+              <div class="close-button glyphicon glyphicon-remove-circle"></div>
+              <h4 class="plan-name text-center">Large</h4>
+              <div class="price text-center">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label>$</label>
+                    <input class="text-center form-control" />{ type: :number, min: 0, placeholder: 350 }</div>
+                </form>
+                <p class="small"><!-- month --></p>
+                <ul class="list-unstyled small">
+                  <li>Some Widgets</li>
+                  <li>Feature</li>
+                  <li>Feature</li>
+                  <li>Feature</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mix-percentage text-center">
+              <form class="form-inline">
+                <div class="form-group">
+                  <input class="text-center form-control" />{ type: :number, min: 0, max: 100, placeholder: 10 }<label><div></div></label>
+                </div>
+              </form>
+              <label>of signups</label>
+            </div>
+          </div>
+          <div class="col-xs-2 add-plan-column">
+            <button class="add-plan btn btn-primary center-block">{ type: :button }
+              <div class="glyphicon glyphicon-plus"></div>
+              <div>Add Plan</div></button>
+          </div>
+        </div>
+        <div class="revenue-multiplier">
+          <button class="calculate-multiplier btn-lg btn-success">{ type: :button }
+            Calculate Potential Revenue Increase</button>
+          <span class="glyphicon glyphicon-arrow-right"></span>
+          <div class="multiplier-display">
+            <h2>
+              <strong>???</strong>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+    <script>{ src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" }</script>
+    <script>{ src: "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" }</script>
+    <script>{ src: "pricing_explorer.js" }</script>
+<script>/*<![CDATA[*/(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-83789604-1', 'auto');
+ga('send', 'pageview');/*]]>*/</script>
+  </body></html>
