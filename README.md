@@ -1,4 +1,4 @@
-# B2B-SaaS-Pricing-Calculator
+# B2B SaaS Pricing Calculator
 
 An SPA marketing tool built to explore the revenue consequences of adjusting B2B SaaS pricing and bundling
 
